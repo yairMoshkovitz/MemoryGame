@@ -1,5 +1,6 @@
 import random
 import pygame
+import time
 
 
 q = input("your name is:")
@@ -9,6 +10,7 @@ try:
 except:
     print("you over al hhokim try again")
     level = 250 -int(input("what is yoyr level (max 24):"))*10
+
 try:
     n = int(input("num of zogot:"))
 except:
@@ -128,7 +130,7 @@ while True:
                   #  k2[-2].open=0
                     klafim2.remove(k2[-1])
                     klafim2.remove(k2[-2])
-                time.sleep(input_l/4)
+                time.sleep(7-input_l//4)
                 for i in   klafim2:
                     i.close()
                    
